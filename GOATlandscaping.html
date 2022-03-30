@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOATscape Landscaping</title>
+    <link rel="stylesheet" href="BLstyles.css">
+    <script src="BLscripts.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Montserrat:wght@200;700;800&family=Nunito:wght@200;400;600&display=swap" rel="stylesheet">
+    
+</head>
+<!-- Heshan Punchihewa Assignment 2 - 2022-03-30 -->
+<body>
+    
+    <header> <h1>GOATscape Landscaping Co.</h1></header>
+    
+    <div class="container">
+        <form onsubmit="printToPage();return false">
+            
+            
+            <div class="customerInfo">
+                
+                
+                <table>
+                    <tr>
+                        <td><label class="formTxt" for="firstName">First Name</label></td>
+                        <td> <input name="firstName" class="input" type="text" id="firstName" maxlength="25" pattern="[A-Za-z- ]{1,30}"  title="Accepts alphabetical characters and hyphens" placeholder="John" autofocus required ></td>
+                    </tr>
+                    <tr>
+                        <td><label class="formTxt" for="lastName">Last Name</label>          
+                        </td>
+                        <td><input name="lastName" class="input" type="text" id="lastName" maxlength="25" pattern="[A-Za-z- ]{1,30}"  title="Accepts alphabetical characters and hyphens" placeholder="Smith" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="formTxt" for="address">Address</label></td>
+                        <td><input name="address" class="input" type="text" id="address" maxlength="50"  title="Enter valid address" placeholder="#65 1 Ave NE, Calgary, AB" required ></td>
+                    </tr>
+                    <tr>
+                        <td><label class="formTxt" for="postalCode">Postal Code</label></td>
+                        <td><input name="postalCode" class="input" type="text" id="postalCode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" Title="Enter valid address" placeholder="T1K Y9K" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="formTxt" for="tel">Contact Number</label></td>
+                        <td><input name="tel" class="input" type="tel" id="tel"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="587-123-1234" required> </td>
+                    </tr>
+                    <tr>
+                        <td><label class="formTxt" for="email">E-mail Address</label></td>
+                        <td><input name="email" class="email" type="email" id="email" placeholder="L.James@mail.com" required ></td>
+                    </tr>
+                    
+                    
+                </table>
+
+                <div class="wrap-select">
+                <label class="formTxt" for="planters">Type of Planter</label><br></td>
+                
+                <select name="planters" id="planters" size="4">
+                    
+                    <option value="square">Square/Rectangular Cubes</option>
+                    <option value="flatbottomCyl">Flat-bottomed Cylinders</option>
+                    <option value="halfSpherical">½ Spherical</option>
+                    <option value="truncCone">Truncated Cone</option>
+                </select>
+            </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+        <!-- print out here -->
+        <div id="orderForm"></div>
+        
+        <div class="output-wrap">
+            <div id="PrintCusInfo"></div>
+            <div id="orderSummary">
+            </div>
+        </div>
+        
+    </form>
+    
+    
+    
+    
+</body>
+</html>

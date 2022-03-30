@@ -1,0 +1,65 @@
+/* stylesheet for GOOATLANDSCAPING 
+ASSIGNMENT 2
+HESHAN PUNCHIHEWA
+2022-03-30 */
+
+body{
+    background-image:url(photos/steven-weeks-DUPFowqI6oI-unsplash.jpg);
+    /* background-attachment: fixed; */
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgb(130, 214, 127);
+    /* background-color: rgba(21, 255, 0, 0.5); */
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Gowun Batang', serif;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.customerInfo {
+    background-color: rgba(240, 248, 255, 0.85);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.customerInfo > *{
+    
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+select > *{
+    font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+}
+
+.wrap-select{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+/* References
+background photo: Steven Weeks, https://unsplash.com/photos/DUPFowqI6oI */
+
+/* font-family: 'Gowun Batang', serif;
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif; */
