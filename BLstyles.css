@@ -25,27 +25,50 @@ h1{
     font-family: 'Gowun Batang', serif;
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.customerInfo {
+.customerInfo{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(240, 248, 255, 0.85);
     border-radius: 10px;
-    padding: 10px;
+    padding:10px;
     margin-top: 40px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 5px 20px 2px black;
+    
 }
+
+.buttons{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+
+
+#showForm{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .customerInfo > *{
     
     font-family: 'Gowun Dodum', sans-serif;
+    padding: 10px;
+    
 }
 
 select > *{
     font-family: 'Gowun Dodum', sans-serif;
     text-align: center;
+}
+
+select{
+    border: 3px solid green;
 }
 
 .wrap-select{
@@ -56,6 +79,46 @@ select > *{
     padding: 15px;
 }
 
+.output{
+ 
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}
+
+.output > div{
+    
+    background-color: rgba(240, 248, 255, 0.85);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: right;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Gowun Dodum', sans-serif;
+    box-shadow: 1px 5px 20px 2px black;
+    
+}
+
+table{
+    margin: 0 auto;
+}
+
+#showForm{
+   display: none;
+}
+
+button{
+    padding: 3px;
+    margin: 5px 5px;
+    background-color: rgb(240, 248, 255);
+    border-radius: 10px;
+    font-family: 'Gowun Dodum', sans-serif;
+    box-shadow: 1px 5px 8px 2px #888888;
+}
 /* References
 background photo: Steven Weeks, https://unsplash.com/photos/DUPFowqI6oI */
 

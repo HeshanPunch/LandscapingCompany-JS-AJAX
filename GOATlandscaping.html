@@ -51,46 +51,28 @@
                         <td><label class="formTxt" for="email">E-mail Address</label></td>
                         <td><input name="email" class="email" type="email" id="email" placeholder="L.James@mail.com" required ></td>
                     </tr>
-                    
-                    
                 </table>
-
-                <div class="wrap-select">
-                <label class="formTxt" for="planters">Type of Planter</label><br></td>
-                
-                <select name="planters" id="planters" size="4">
-                    
-                    <option value="square">Square/Rectangular Cubes</option>
-                    <option value="flatbottomCyl">Flat-bottomed Cylinders</option>
-                    <option value="halfSpherical">½ Spherical</option>
-                    <option value="truncCone">Truncated Cone</option>
-                </select>
-            </div>
-                
-                
-                
-                
-                
-                
-                
-                
+                <div class="buttons">
+                    <label class="formTxt" for="email">Planter Style</label><br>
+                    <button value="square" id="square" onclick="showSquareForm(); return false">Square/Rectangular Cubes</button><br>
+                    <button value="cylinder" id="cylinder" onclick="showFBCylinderForm(); return false">Flat Bottomed Cylinders</button><br>
+                    <button value="spherical" id="spherical" onclick="showSphericalForm(); return false">Half-Spherical</button><br>
+                    <button value="cone" id="cone" onclick="showTruncForm(); return false">Truncated Cone</button><br>
+                </div>
                 
             </div>
-        </div>
-        
-        <!-- print out here -->
-        <div id="orderForm"></div>
-        
-        <div class="output-wrap">
-            <div id="PrintCusInfo"></div>
-            <div id="orderSummary">
+            <div class="output">
+                <div id="showForm"></div>
+                
             </div>
-        </div>
+            
+            
+            
+        </form>
         
-    </form>
-    
-    
-    
-    
-</body>
-</html>
+        
+        
+        
+        
+    </body>
+    </html>
