@@ -5,7 +5,6 @@ HESHAN PUNCHIHEWA
 
 body{
     background-image:url(photos/steven-weeks-DUPFowqI6oI-unsplash.jpg);
-    /* background-attachment: fixed; */
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -14,19 +13,28 @@ body{
 header{
     display: flex;
     justify-content: center;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
     
 }
+
+header > img {
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
 h1{
-    background-color: rgba(0, 0, 0, 0.75);
-    color: rgb(130, 214, 127);
-    /* background-color: rgba(21, 255, 0, 0.5); */
+    
+    color: black;
     padding: 15px;
     border-radius: 10px;
     font-family: 'Gowun Batang', serif;
 }
 
 .customerInfo{
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(240, 248, 255, 0.85);
@@ -49,7 +57,7 @@ h1{
 
 
 #showForm{
-    width: 40%;
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,35 +79,29 @@ select{
     border: 3px solid green;
 }
 
-.wrap-select{
-    text-align: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-}
 
 .output{
- 
+    
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-   
+    
     
 }
 
-.output > div{
+.output div{
     
     background-color: rgba(240, 248, 255, 0.85);
     border-radius: 10px;
     margin-top: 20px;
     text-align: right;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Gowun Dodum', sans-serif;
     box-shadow: 1px 5px 20px 2px black;
+    margin-left: auto;
     
 }
 
@@ -107,8 +109,14 @@ table{
     margin: 0 auto;
 }
 
-#showForm{
-   display: none;
+#showForm, #customerInfo, #orderinfo{
+    display: none;
+    
+    
+}
+
+#showForm > table{
+    text-align: right;
 }
 
 button{
@@ -117,8 +125,21 @@ button{
     background-color: rgb(240, 248, 255);
     border-radius: 10px;
     font-family: 'Gowun Dodum', sans-serif;
-    box-shadow: 1px 5px 8px 2px #888888;
+    
 }
+
+
+button:hover{
+    background-color:rgb(83, 172, 255);
+    box-shadow: 4px 5px 8px 2px #888888;
+}
+
+
+.output input{
+    width: 50px;
+}
+
+
 /* References
 background photo: Steven Weeks, https://unsplash.com/photos/DUPFowqI6oI */
 
